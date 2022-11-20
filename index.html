@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>ACME Corp.</title>
+		<meta name="description" content="Fictitious Business Project Home Page">
+		<link rel="stylesheet" href="styles.css">
+		<script src="script.js"></script>
+
+	</head>
+
+	<body>
+		<div id="mobileContent">
+			<header>
+				<a href="index.html"><div class="logo">ACME</div></a>
+				<div id="title">HOME</div>
+				<div id="hamburger"><hr><hr><hr></div>
+			</header>
+
+			<nav>
+				<a href="allProducts.html">Shop All</a>
+				<a href="sale.html">Sales</a>
+				<a href="bestSellers.html">Best Sellers</a>
+				<a href="newArrivals.html">New Arrivals</a>
+				<a href="industrial.html">Industrial Products</a>
+				<a href="diyKits.html">DIY Kits</a>
+				<a href="birdSeed.html">Bird Seed</a>
+				<a href="misc.html">Misc Products</a>
+				<a href="about.html">About us</a>
+				<a href="contact.html">Contact us</a>
+			</nav>
+			<main id="mobileMain">
+				<div id="searchAndCart">
+					<input type="text" placeholder="Search..." id="searchField">
+					<input type="image" src="images/search.png" id="searchButton" onclick="mobileQuery()" alt="Image of a magnifying glass.">
+					<div></div>
+					<input type="image" src="images/cart.png" class="cart" onclick="loadCart()" alt="Image of a shopping cart.">
+				</div>
+
+				<div class="banner">
+					<a href="sale.html">
+						<div>
+							<span>END OF SUMMER SALE</span>
+							<br>
+							<span>Enjoy up to 50% off select products!<br>Free shipping on orders over $50!<br>Free gift with every purchase!</span>
+							<br>
+							<span>HURRY,<br>SALE ENDS LABOR DAY</span>				
+						</div>
+					</a>
+					<a href="sale.html"><img src="images/diyTornado.png" alt="Box containing a DIY tornado kit"></a>
+
+				</div>
+
+				<div id="categories">
+					<a href="industrial.html">
+						<div>
+							<img src="images/industrial.png" alt="Image of a cog.">
+							<p>Industrial</p>
+						</div>
+					</a>
+					<a href="diyKits.html">
+						<div>
+							<img src="images/diyKits.png" alt="Image of a hammer.">
+							<p>DIY Kits</p>
+						</div>
+					</a>
+					<a href="birdSeed.html">
+						<div>
+							<img src="images/birdSeed.png" alt="Image of the Roadrunner.">
+							<p>Bird Seed</p>
+						</div>
+					</a>
+					<a href="misc.html">
+						<div>
+							<img src="images/misc.png" alt="MISC written in ALL CAPS">
+							<p>Misc</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="BSandNA">
+					<a href="bestSellers.html">
+						<span><img src="images/bestSellers.png" alt="Wile E. Coyote unrolling a paved raod."></span>
+					</a>
+					<span></span>
+					<a href="newArrivals.html">
+						<span><img src="images/newArrivals.png" alt="Wile E. Coyote strapped to a rocket, lighting the fuse with a match."></span>
+					</a>
+				</div>
+
+				<div class="main">
+					<a href="allProducts.html">
+						<div><p>SHOP ALL PRODUCTS<p></div>
+						<span><img src="images/collage_mobile.png" alt="Colalge of various ACME products featerd in the original cartoon."></span>
+					</a>
+				</div>
+			</main>
+		</div>
+
+		<div id="desktopContent">
+			<header>
+				<a href="index.html"><div class="logo">ACME</div></a>
+				<div><input type="text" placeholder="Search..." id="desktopSearchField"></div>
+				<input type="image" src="images/search.png" id="desktopSearchButton" onclick="desktopQuery()" alt="Image of a magnifying glass.">
+				<input type="image" src="images/cart.png" class="cart" onclick="loadCart()" alt="Image of a shopping cart.">
+			</header>
+			
+			<nav>
+				<a href="industrial.html">Industrial</a>
+				<a href="diyKits.html">DIY Kits</a>
+				<a href="birdSeed.html">Bird Seed</a>
+				<a href="misc.html">Misc</a>
+			</nav>
+			
+			<main hidden id="desktopMain">
+				<div class="banner">
+					<a href="sale.html">END OF SUMMER SALE ENDS SOON.  HURRY, SALE ENDS LABOR DAY!</a>
+				</div>
+				
+				<div class="main">
+					<a href="allProducts.html">
+						<span><img src="images/collage.png" alt="Colalge of various ACME products featerd in the original cartoon."></span>
+					</a>
+				</div>
+				
+				<div class="BSandNA">
+					<a href="bestSellers.html">
+						<span><img src="images/bestSellersDesktop.png" alt="Wile E. Coyote unrolling a paved raod."></span>
+					</a>
+					<span></span>
+					<a href="newArrivals.html">
+						<span><img src="images/newArrivalsDesktop.png" alt="Wile E. Coyote strapped to a rocket, lighting the fuse with a match."></span>
+					</a>
+				</div>
+			</main>
+			
+			<footer>
+				<div>
+					<p>Copyright &copy; 2022 ACME Corporation</p>
+					<p><a href="about.html">ABOUT US</a></p>
+					<p><a href="contact.html">CONTACT US</a></p>
+				</div>
+			</footer>
+
+		</div>
+	</body>
+</html>

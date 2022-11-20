@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>ACME Corp. - DIY Kits</title>
+		<meta name="description" content="Fictitious Business Project DIY Kits Page">
+		<link rel="stylesheet" href="styles_underConstruction.css">
+		<script src="script.js"></script>
+
+	</head>
+
+	<body>
+		<div id="mobileContent">
+			<header>
+				<a href="index.html"><div class="logo">ACME</div></a>
+				<div id="title">DIY KITS</div>
+				<div id="hamburger"><hr><hr><hr></div>
+			</header>
+
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="allProducts.html">Shop All</a>
+				<a href="sale.html">Sales</a>
+				<a href="bestSellers.html">Best Sellers</a>
+				<a href="newArrivals.html">New Arrivals</a>
+				<a href="industrial.html">Industrial Products</a>
+				<a href="birdSeed.html">Bird Seed</a>
+				<a href="misc.html">Misc Products</a>
+				<a href="about.html">About us</a>
+				<a href="contact.html">Contact us</a>
+			</nav>
+
+			<div id="searchAndCart">
+				<input type="text" placeholder="Search..." id="searchField">
+				<input type="image" src="images/search.png" id="searchButton" onclick="mobileQuery()" alt="Image of a magnifying glass.">
+				<div></div>
+				<input type="image" src="images/cart.png" class="cart" onclick="loadCart()" alt="Image of a shopping cart.">
+			</div>
+			<main id="mobileMain">
+				<div class="banner">
+					<p>This page is currently under construction.</p>
+				</div>
+			</main>
+		</div>
+
+		<div id="desktopContent">
+			<header>
+				<a href="index.html"><div class="logo">ACME</div></a>
+				<div><input type="text" placeholder="Search..." id="desktopSearchField"></div>
+				<input type="image" src="images/search.png" id="desktopSearchButton" onclick="desktopQuery()" alt="Image of a magnifying glass.">
+				<input type="image" src="images/cart.png" class="cart" onclick="loadCart()" alt="Image of a shopping cart.">
+			</header>
+			
+			<nav>
+				<a href="industrial.html">Industrial</a>
+				<a href="diyKits.html">DIY Kits</a>
+				<a href="birdSeed.html">Bird Seed</a>
+				<a href="misc.html">Misc</a>
+			</nav>
+			
+			<main id="desktopMain" hidden>
+				<div class="banner">
+					<p>This page is currently under construction.</p>
+				</div>
+			</main>
+						
+			<footer>
+				<div>
+					<p>Copyright &copy; 2022 ACME Corporation</p>
+					<p><a href="about.html">ABOUT US</a></p>
+					<p><a href="contact.html">CONTACT US</a></p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
