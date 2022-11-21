@@ -29,7 +29,7 @@ a {
 
 h1 {
 	font-weight: normal;
-	padding: 5px;
+	padding: 10px;
 	margin: 0;
 }
 
@@ -290,18 +290,30 @@ nav a:last-of-type {
 	.about {
 		width: 768px;
 		margin: 0 auto 0 auto;
-		background-color: rgb(236, 236, 236);
 		color: rgb(9, 93, 126);
 	}
+	
+	#welcome {
+		background-color: rgb(236, 236, 236);
+	}
 
-	.about img {
+	#welcome img {
 		float: left;
 		padding-right: 15px;
+	}
+
+	#owner img {
+		float: right;
+		padding-left: 15px;
 	}
 
 	.about p {
 		text-align: justify;
 		padding: 0 15px;
+	}
+	
+	.about p:first-of-type {
+		margin-top: 0;
 	}
 	
 	footer {
