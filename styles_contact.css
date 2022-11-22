@@ -340,7 +340,6 @@ nav a:last-of-type {
 		margin-left: auto;
 		margin-right: auto;
 		width: 768px;
-		border: solid black 1px; /*************delete this later**************/
 	}
 	
 	footer {
@@ -378,9 +377,35 @@ nav a:last-of-type {
 		border-left: solid rgb(9, 93, 126) 1px;
 		border-right: solid rgb(9, 93, 126) 1px;
 	}
+
+
+	
+
+
+
+	/***********Accordion Stuff****************/
+	#FAQ {
+		text-align: left;
+	}
+
+	button {
+		color: white;
+		border-radius: 5px;
+		font-size: 1.5em;
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		padding: 5px;
+	}
+	
+	button:nth-of-type(even) {
+		background: rgb(9, 93, 126);
+	}
+
+	button:nth-of-type(odd) {
+		background: rgb(254, 215, 0);
+	}
 }
-
-
 
 
 
