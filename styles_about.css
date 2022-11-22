@@ -239,17 +239,17 @@ nav a:last-of-type {
 	color: rgb(9, 93, 126);
 }
 	
-#welcome {
+#welcome, #mobileWelcome {
 	background-color: rgb(236, 236, 236);
 	margin-top: 25px;
 }
 
-#welcome img {
+#welcome img, #mobileWelcome img {
 	float: left;
 	padding-right: 15px;
 }
 
-#owner img {
+#owner img, #mobileOwner img {
 	float: right;
 	padding-left: 15px;
 }
@@ -285,7 +285,7 @@ nav a:last-of-type {
 		font-size: 1em;
 	}
 
-	#welcome {margin-top: 0;}
+	#welcome, #mobileWelcome {margin-top: 0;}
 	
 	header {
 		background: white;
