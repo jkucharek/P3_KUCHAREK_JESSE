@@ -13,7 +13,7 @@
 	</head>
 
 	<body>
-		<div id="mobileContent">
+		<div id="mobileContent"			
 			<header>
 				<a href="index.html"><div class="logo">ACME</div></a>
 				<div id="title">HOME</div>
@@ -33,6 +33,9 @@
 				<a href="contact.html">Contact us</a>
 			</nav>
 			<main id="mobileMain">
+				
+<!-- I saw your comment about using semantic elements here in place of divs, but the validator was kicking back warnings when I used semantic elements as I am not using headings, so I elected to keep the divs. -->
+				
 				<div id="searchAndCart">
 					<input type="text" placeholder="Search..." id="searchField">
 					<input type="image" src="images/search.png" id="searchButton" onclick="mobileQuery()" alt="Image of a magnifying glass.">
