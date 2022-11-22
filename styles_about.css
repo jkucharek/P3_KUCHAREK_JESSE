@@ -33,6 +33,48 @@ h1 {
 	margin: 0;
 }
 
+#title {
+	padding-top: 5px;
+	color: rgb(9, 93, 126);
+	font-size: 3rem;
+}
+
+#hamburger {
+	background: rgb(236, 236, 236);
+	border-radius: 8px;
+	line-height: 0.75;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#hamburger:hover {
+	background: rgb(9, 93, 126);
+}
+
+#hamburger:hover hr {
+	background: rgb(236, 236, 236);
+}
+
+#hamburger hr {
+	width: 60%;
+	height: 3px;
+	background: rgb(9, 93, 126);
+	border: 0;
+	transition: 0.4s;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+p {
+	font-size: 0.75em;
+}
+
+img {
+	max-width: 50%;
+}
+
+.about {min-height: 375px;}
+
 
 
 
@@ -141,6 +183,8 @@ nav a:last-of-type {
 
 
 
+
+
 /*banner formatting*/
 .banner {
 	height: 180px;
@@ -189,6 +233,40 @@ nav a:last-of-type {
 
 
 
+/*main formatting*/
+.about {
+	margin: 0 auto 0 auto;
+	color: rgb(9, 93, 126);
+}
+	
+#welcome {
+	background-color: rgb(236, 236, 236);
+	margin-top: 25px;
+}
+
+#welcome img {
+	float: left;
+	padding-right: 15px;
+}
+
+#owner img {
+	float: right;
+	padding-left: 15px;
+}
+
+.about p {
+	text-align: justify;
+	padding: 0 15px;
+}
+	
+.about p:first-of-type {
+	margin-top: 0;
+}
+
+
+
+
+
 
 
 
@@ -203,6 +281,9 @@ nav a:last-of-type {
 		display: grid;
 	}
 	
+	p { 
+		font-size: 1em;
+	}
 	
 	header {
 		background: white;
@@ -289,31 +370,6 @@ nav a:last-of-type {
 
 	.about {
 		width: 768px;
-		margin: 0 auto 0 auto;
-		color: rgb(9, 93, 126);
-	}
-	
-	#welcome {
-		background-color: rgb(236, 236, 236);
-	}
-
-	#welcome img {
-		float: left;
-		padding-right: 15px;
-	}
-
-	#owner img {
-		float: right;
-		padding-left: 15px;
-	}
-
-	.about p {
-		text-align: justify;
-		padding: 0 15px;
-	}
-	
-	.about p:first-of-type {
-		margin-top: 0;
 	}
 	
 	footer {
@@ -350,5 +406,25 @@ nav a:last-of-type {
 	footer p:nth-of-type(2) {
 		border-left: solid rgb(9, 93, 126) 1px;
 		border-right: solid rgb(9, 93, 126) 1px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*formatting for tablets*/
+@media (min-width: 600px) and (max-width: 1023px){
+	#searchField {
+		font-size: 1.5rem;
+	}
+	
+	p {
+		font-size: 1em;
 	}
 }
