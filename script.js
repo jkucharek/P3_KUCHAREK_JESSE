@@ -28,8 +28,13 @@ window.onload = function() {
 		document.getElementsByClassName('panel')[i].style.maxHeight = "0px";
 
 		document.getElementsByClassName('accordion')[i].addEventListener("click", function() {
-			if(document.getElementsByClassName('panel')[i].style.maxHeight == "0px")
+			if(document.getElementsByClassName('panel')[i].style.maxHeight == "0px") {
 				document.getElementsByClassName('panel')[i].style.maxHeight = document.getElementsByClassName('panel')[i].scrollHeight + "px";
+				for (let j = 0; j < 4; j++) {
+					if (j != i) 
+						document.getElementsByClassName('panel')[j].style.maxHeight = "0px"
+				}
+			}
 			else
 				document.getElementsByClassName('panel')[i].style.maxHeight = "0px";
 		});
