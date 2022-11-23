@@ -110,9 +110,10 @@
 				
 				<div id="contactForm">
 					<h1>Contact Us</h1>
-					<form id="inputForm">
-						<label for="reason">Why are you contacting us?</label><br>
-						<select id="reason" name="reason">
+					<form id="inputForm" method="get">
+						<label for="reason">Why are you contacting us?</label>
+
+						<select id="reason" name="reason" id="reason" required>
 							<option value="placeholder" disabled selected>--select an option--</option>
 							<option value="return">I would like to make a return.</optioni>
 							<option value="late">My order never arrived.</option>
@@ -121,6 +122,26 @@
 							<option value="ammend">I would like change/ammend an order.</option>
 							<option value="other">Other. (please explain below)</option>
 						</select>
+
+						<label for="contactInfo">Contact Information</label>
+
+						<select name="contactInfo" id="honorific" required>
+							<option value="title" disabled selected>Title</option>
+							<option value="mr">Mr.</option>
+							<option value="mrs">Mrs.</option>
+							<option value="ms">Ms.</option>
+							<option value="miss">Miss</option>
+							<option value="dr">Dr.</option>
+						</select>
+
+						<input type="text" name="fName" id="fName" placeholder="First Name" required></input>
+						<input type="text" name="lName" id="lName" placeholder="Last Name" required></input>
+						<input type="email" name="email" id="email" placeholder="Email" required></input>
+						<input type="tel" name="phone" id="phone" placeholder="Phone" required></input>
+
+						<textarea name="comments" id="comments" placeholder="Comments..." required></textarea>
+
+						<span><input type="submit" name="submit" id="submit" value="SUBMIT"></input></span>
 					</form>
 				</div>
 			</main>
