@@ -397,7 +397,7 @@ nav a:last-of-type {
 		cursor: pointer;
 		padding: 5px;
 	}
-	
+
 	button:nth-of-type(odd) {
 		background: rgb(9, 93, 126);
 	}
@@ -406,7 +406,7 @@ nav a:last-of-type {
 		background: rgb(254, 215, 0);
 	}
 
-	.panel{
+	.panel {
 		background: rgb(236, 236, 236);
 		overflow: hidden;
 		transition: max-height 0.2s ease-out;
@@ -415,8 +415,20 @@ nav a:last-of-type {
 		color: rgb(9, 93, 126);
 	}
 
+	.accordion span {
+		margin-left: 5px;
+	}
 
+	.accordion:after {
 
+		content: "\25B6";
+		float: left;
+		margin-left: 5px;
+	}
+
+	.active:after {		
+		content: "\25BC";	
+	}
 
 }
 
