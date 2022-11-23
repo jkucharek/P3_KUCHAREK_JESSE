@@ -11,7 +11,7 @@
 	max-width: 1920px;
 	min-width: 360px;
 	text-align: center;
-	margin: auto 20px;
+	margin: auto;
 	
 }
 
@@ -390,7 +390,7 @@ nav a:last-of-type {
 
 	button {
 		color: white;
-		border-radius: 5px;
+		border-radius: 15px;
 		font-size: 1.5em;
 		width: 100%;
 		text-align: left;
@@ -405,6 +405,18 @@ nav a:last-of-type {
 	button:nth-of-type(odd) {
 		background: rgb(254, 215, 0);
 	}
+
+	.panel{
+		background: rgb(236, 236, 236);
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		border-radius: 15px;
+		padding-left: 5px;
+	}
+
+
+
+
 }
 
 

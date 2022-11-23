@@ -18,6 +18,22 @@ window.onload = function() {
 			document.getElementsByTagName('nav')[0].style.maxHeight = "0px";
 	});
 
+
+
+
+
+
+	//set height of all panel elements to 0
+	for (let i = 0; i < 4; i++) {
+		document.getElementsByClassName('panel')[i].style.maxHeight = "0px";
+
+		document.getElementsByClassName('accordion')[i].addEventListener("click", function() {
+			if(document.getElementsByClassName('panel')[i].style.maxHeight == "0px")
+				document.getElementsByClassName('panel')[i].style.maxHeight = document.getElementsByClassName('panel')[i].scrollHeight + "px";
+			else
+				document.getElementsByClassName('panel')[i].style.maxHeight = "0px";
+		});
+	}
 };
 
 function loadCart() {
