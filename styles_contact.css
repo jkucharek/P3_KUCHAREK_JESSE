@@ -384,8 +384,16 @@ nav a:last-of-type {
 
 
 	/***********Accordion Stuff****************/
-	#FAQ {
+	#FAQ, #contactForm {
 		text-align: left;
+	}
+
+	#FAQ h1 {
+		margin-bottom: -15px;
+	}
+
+	#contactForm h1 {
+		margin-top: 15px;
 	}
 
 	button {
@@ -396,6 +404,8 @@ nav a:last-of-type {
 		text-align: left;
 		cursor: pointer;
 		padding: 5px;
+		margin-top: 5px;
+		border: none;
 	}
 
 	button:nth-of-type(odd) {
@@ -430,6 +440,31 @@ nav a:last-of-type {
 		content: "\25BC";	
 	}
 
+	form {
+		background: rgb(236, 236, 236);
+		border: solid 1px rgb(9, 93, 126);
+		margin-bottom: 5px;
+		padding: 5px 0 10px 10px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: minmax(25px, auto);
+		grid-gap: 5px;
+	}
+	
+	label {
+		margin: auto 0;
+		font-size: 0.75em;
+		font-weight: 900;
+		grid-column: 1/2;
+	}
+
+	select {
+		padding: 5px 0;
+		color: rgb(127, 127, 127);
+		font-size: 1em;
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
 }
 
 
