@@ -67,7 +67,7 @@ h1 {
 }
 
 p {
-	font-size: 0.75em;
+	font-size: 1em;
 }
 
 
@@ -158,6 +158,7 @@ nav a:last-of-type {
 	border: solid rgb(9, 93, 126) 2px; 
 	border-radius: 5px 0 0 5px;
 	color: rgb(9, 93, 126);
+	font-size: 1.5em;
 }
 
 #searchField:focus {
@@ -229,7 +230,162 @@ nav a:last-of-type {
 
 
 
-/*main formatting*/
+/*A********************************working here*************************************/
+
+
+button {
+	color: white;
+	border-radius: 15px;
+	font-size: 1.5em;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	margin-top: 5px;
+	border: none;
+}
+
+#mobileAccordionItems button {
+	padding: 15px;
+}
+
+button:nth-of-type(odd) {
+	background: rgb(9, 93, 126);
+}
+
+button:nth-of-type(even) {
+	background: rgb(254, 215, 0);
+}
+
+.panel {
+	background: rgb(236, 236, 236);
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	border-radius: 15px;
+	padding: 0 15px;;
+	color: rgb(9, 93, 126);
+}
+
+.accordion span {
+	margin-left: 5px;
+}
+
+.accordion:after {
+	content: "\25B6";
+	float: left;
+	margin-left: 5px;
+}
+
+.active:after {		
+	content: "\25BC";	
+}
+
+
+#mobileFAQ, #mobileContactForm {
+	text-align: left;
+}
+
+#mobileFAQ h1 {
+	margin: 10px 0 -15px 0;
+}
+
+#mobileContactForm form {
+	background: rgb(236, 236, 236);
+	border: solid 1px rgb(9, 93, 126);
+	margin-bottom: 10px;
+	padding: 10px 10px; 10px 10px;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-auto-rows: minmax(50px, auto);
+	grid-gap: 10px;
+
+}
+
+#reasonMobile {
+	grid-column: 1/8;
+	font-size: 1.5em;
+	padding-left: 5px;
+	color: rgb(127, 127, 127);
+}
+
+#contactInfoMobile {
+	grid-column: 1/2;
+	font-size: 1.5em;
+	padding-left: 5px;
+	color: rgb(127, 127, 127);	
+}
+
+#fNameMobile {
+	grid-column: 2/5;
+	font-size: 1.5em;
+	padding-left: 5px;
+	color: rgb(127, 127, 127);	
+}
+
+
+#lNameMobile {
+	grid-column: 5/8;
+	font-size: 1.5em;
+	padding-left: 5px;
+	color: rgb(127, 127, 127);	
+}
+
+#emailMobile {
+	grid-column: 1/5;
+	font-size: 1.5em;
+	padding-left: 5px;
+	color: rgb(127, 127, 127);	
+}
+
+#phoneMobile {
+	grid-column: 5/8;
+	font-size: 1.5em;
+	padding-left: 5px;
+	color: rgb(127, 127, 127);	
+}
+
+#commentsMobile {
+	grid-column: 1/8;
+	grid-row: 4/8;
+	resize: none;
+	padding-left: 5px;
+	font-family: "Myriad Pro", sans-serif;
+	font-size: 1.5em;
+	color: rgb(127, 127, 127);
+}
+
+
+#submit, #submitMobile {
+	width: 200px;
+	padding-right: 5px;	
+	color:rgb(9, 93, 126);
+	font-weight: 400;
+	font-size: 1.5em;
+	border-radius: 10px;
+	border: solid 1px rgb(9, 93, 126);
+	background: rgb(254, 215, 0);
+	cursor: pointer;
+	transition: 0.2s ease-out;
+}
+
+#submitMobile {
+	height: 50px;
+	font-size: 1.75em;
+}
+
+
+#mobileInputForm span {
+	grid-column: 1/8;
+	margin: auto;
+}
+
+
+#submit:hover, #submitMobile:hover {
+	color: rgb(254, 215, 0);
+	background: rgb(9, 93, 126);
+	border-color: rgb(254, 215, 0);
+}
+
+
 
 
 
@@ -397,49 +553,11 @@ nav a:last-of-type {
 	}
 
 	button {
-		color: white;
-		border-radius: 15px;
-		font-size: 1.5em;
-		width: 100%;
-		text-align: left;
-		cursor: pointer;
 		padding: 5px;
-		margin-top: 5px;
-		border: none;
 	}
 
-	button:nth-of-type(odd) {
-		background: rgb(9, 93, 126);
-	}
 
-	button:nth-of-type(even) {
-		background: rgb(254, 215, 0);
-	}
-
-	.panel {
-		background: rgb(236, 236, 236);
-		overflow: hidden;
-		transition: max-height 0.2s ease-out;
-		border-radius: 15px;
-		padding: 0 15px;;
-		color: rgb(9, 93, 126);
-	}
-
-	.accordion span {
-		margin-left: 5px;
-	}
-
-	.accordion:after {
-
-		content: "\25B6";
-		float: left;
-		margin-left: 5px;
-	}
-
-	.active:after {		
-		content: "\25BC";	
-	}
-
+	/*******form stuff*******/
 	form {
 		background: rgb(236, 236, 236);
 		border: solid 1px rgb(9, 93, 126);
@@ -450,23 +568,22 @@ nav a:last-of-type {
 		grid-auto-rows: minmax(25px, auto);
 		grid-gap: 5px;
 	}
+
+	select, input, textarea {
+		padding: 5px 0;
+		color: rgb(127, 127, 127);
+		font-size: 1em;
+	}
+
+	input {
+		padding-left: 5px;
+	}
 	
 	label {
 		margin: auto 0;
 		font-size: 0.75em;
 		font-weight: 900;
 		grid-column: 1/7;
-	}
-
-	select, input, textarea {
-		padding: 5px 0;
-		color: rgb(127, 127, 127);
-		font-size: 1em;
-
-	}
-
-	input {
-		padding-left: 5px;
 	}
 
 	#reason {
@@ -511,26 +628,6 @@ nav a:last-of-type {
 		grid-column: 1/7;
 		margin: 0 auto;
 	}
-
-	#submit {
-		width: 200px;
-		padding-right: 5px;	
-		color:rgb(9, 93, 126);
-		font-weight: 400;
-		font-size: 1.5em;
-		border-radius: 10px;
-		border: solid 1px rgb(9, 93, 126);
-		background: rgb(254, 215, 0);
-		cursor: pointer;
-		transition: 0.2s ease-out;
-	}
-
-	#submit:hover {
-		color: rgb(254, 215, 0);
-		background: rgb(9, 93, 126);
-		border-color: rgb(254, 215, 0);
-		
-	}
 }
 
 
@@ -541,16 +638,27 @@ nav a:last-of-type {
 
 
 /*formatting for tablets*/
-@media (min-width: 600px) and (max-width: 1023px){
-	#searchField {
-		font-size: 1.5rem;
-	}
-	
-	p {
-		font-size: 1em;
-	}
-
+@media (min-width: 600px) and (max-width: 1023px) {
 	#title {
 		font-size: 3em;
+	}
+}
+
+
+
+
+
+
+
+
+
+/*formatting for extremely narrow screens*/
+@media (min-width: 360px) and (max-width: 599px) {
+	button {
+		font-size: 1.05em;
+	}
+
+	#reasonMobile, #contactInfoMobile, #fNameMobile, #lNameMobile, #emailMobile, #phoneMobile, #commentsMobile {
+		font-size: 1em;
 	}
 }
