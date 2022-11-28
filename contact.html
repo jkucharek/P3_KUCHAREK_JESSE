@@ -113,9 +113,9 @@
 					<form id="inputForm" method="get">
 						<label for="reason">Why are you contacting us?</label>
 
-						<select id="reason" name="reason" id="reason" required>
-							<option value="placeholder" disabled selected>--select an option--</option>
-							<option value="return">I would like to make a return.</optioni>
+						<select name="reason" id="reason" required>
+							<option value="" disabled selected>--Select an option--</option>
+							<option value="return">I would like to make a return.</option>
 							<option value="late">My order never arrived.</option>
 							<option value="complaint">I have a complaint.</option>
 							<option value="coyote">Can I meet the Coyote?</option>
@@ -125,8 +125,8 @@
 
 						<label for="contactInfo">Contact Information</label>
 
-						<select name="contactInfo" id="honorific" required>
-							<option value="title" disabled selected>Title</option>
+						<select name="contactInfo" id="contactInfo" required>
+							<option value="" disabled selected>Title</option>
 							<option value="mr">Mr.</option>
 							<option value="mrs">Mrs.</option>
 							<option value="ms">Ms.</option>
@@ -134,14 +134,14 @@
 							<option value="dr">Dr.</option>
 						</select>
 
-						<input type="text" name="fName" id="fName" placeholder="First Name" required></input>
-						<input type="text" name="lName" id="lName" placeholder="Last Name" required></input>
-						<input type="email" name="email" id="email" placeholder="Email" required></input>
-						<input type="tel" name="phone" id="phone" placeholder="Phone" required></input>
+						<input type="text" name="fName" id="fName" placeholder="First Name" required>
+						<input type="text" name="lName" id="lName" placeholder="Last Name" required>
+						<input type="email" name="email" id="email" placeholder="Email" required>
+						<input type="tel" name="phone" id="phone" placeholder="Phone" required>
 
 						<textarea name="comments" id="comments" placeholder="Comments..." required></textarea>
 
-						<span><input type="submit" name="submit" id="submit" value="SUBMIT"></input></span>
+						<span><input type="submit" name="submit" id="submit" value="SUBMIT"></span>
 					</form>
 				</div>
 			</main>
