@@ -385,6 +385,9 @@ button:nth-of-type(even) {
 	border-color: rgb(254, 215, 0);
 }
 
+#mobileContactForm h1 {
+	margin-top: 15px;
+}
 
 
 
