@@ -27,7 +27,7 @@ window.onload = function() {
 
 
 	//Code for the accordion on FAQ page
-	for (let i = 0; i < 4; i++) {
+	for (let i = 0; i < 8; i++) {
 		//set height of all accordion panels to 0
 		document.getElementsByClassName('panel')[i].style.maxHeight = "0px";
 
@@ -41,7 +41,7 @@ window.onload = function() {
 				document.getElementsByClassName('accordion')[i].classList.add("active");
 
 				//and collapse all other panels
-				for (let j = 0; j < 4; j++) {
+				for (let j = 0; j < 8; j++) {
 					if (j != i) { 
 						document.getElementsByClassName('panel')[j].style.maxHeight = "0px"
 						document.getElementsByClassName('accordion')[j].classList.remove("active");

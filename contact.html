@@ -14,6 +14,7 @@
 
 	<body>
 
+<!-- Begin mobile content -->
 		<div id="mobileContent">
 			<header>
 				<a href="index.html"><div class="logo">ACME</div></a>
@@ -21,7 +22,7 @@
 				<div id="hamburger"><hr><hr><hr></div>
 			</header>
 
-			<nav>
+			<nav><!-- hamburger menu-->
 				<a href="index.html">Home</a>
 				<a href="allProducts.html">Shop All</a>
 				<a href="sale.html">Sales</a>
@@ -31,20 +32,20 @@
 				<a href="diyKits.html">DIY Kits</a>
 				<a href="birdSeed.html">Bird Seed</a>
 				<a href="misc.html">Misc Products</a>
-				<a href="contact.html">Contact us</a>
+				<a href="about.html">About us</a>
 			</nav>
 
-			<div id="searchAndCart">
+			<div id="searchAndCart"><!-- search bar area -->
 				<input type="text" placeholder="Search..." id="searchField">
 				<input type="image" src="images/search.png" id="searchButton" onclick="mobileQuery()" alt="Image of a magnifying glass.">
 				<div></div>
 				<input type="image" src="images/cart.png" class="cart" onclick="loadCart()" alt="Image of a shopping cart.">
 			</div>
 
-			<main id="mobileMain">
+			<main id="mobileMain"><!-- main content -->
 				<div id="mobileFAQ">
 					<h1>FAQ</h1>
-					<div id="mobileAccordionItems">
+					<div id="mobileAccordionItems"><!--FAQ accordion items -->
 						<button class="accordion"><span>How long do items take to ship?</span></button>
 						<div class="panel">
 							<p>At ACME we pride ourselves on our speed of delivery.  Once you have submitted your order, you can expect delivery within a few seconds.</p>
@@ -69,8 +70,8 @@
 				
 				<div id="mobileContactForm">
 					<h1>Contact Us</h1>
-					<form id="mobileInputForm" method="get">
-						<select name="reason" id="reasonMobile" required>
+					<form id="mobileInputForm" method="get"><!-- contact form -->
+						<select name="reason" id="reasonMobile" required><!-- dropdown for contact reason -->
 							<option value="" disabled selected>Why are you contacting us?</option>
 							<option value="return">I would like to make a return.</option>
 							<option value="late">My order never arrived.</option>
@@ -80,7 +81,7 @@
 							<option value="other">Other. (please explain below)</option>
 						</select>
 
-						<select name="contactInfoMobile" id="contactInfoMobile" required>
+						<select name="contactInfoMobile" id="contactInfoMobile" required><!-- dropdown for prefered honorific -->
 							<option value="" disabled selected>Title</option>
 							<option value="mr">Mr.</option>
 							<option value="mrs">Mrs.</option>
@@ -88,13 +89,14 @@
 							<option value="miss">Miss</option>
 							<option value="dr">Dr.</option>
 						</select>
-
+						
+						<!-- text input fields for name, email and phone -->
 						<input type="text" name="fNameMobile" id="fNameMobile" placeholder="First Name" required>
 						<input type="text" name="lNameMobile" id="lNameMobile" placeholder="Last Name" required>
 						<input type="email" name="emailMobile" id="emailMobile" placeholder="Email" required>
 						<input type="tel" name="phoneMobile" id="phoneMobile" placeholder="Phone" required>
 
-						<textarea name="commentsMobile" id="commentsMobile" placeholder="Comments..." required></textarea>
+						<textarea name="commentsMobile" id="commentsMobile" placeholder="Comments..." required></textarea><!-- comments box -->
 
 						<span><input type="submit" name="submitMobile" id="submitMobile" value="SUBMIT"></span>	
 					</form>					
@@ -102,6 +104,7 @@
 			
 			</main>
 		</div>
+<!-- End mobile content -->
 
 
 
@@ -109,8 +112,7 @@
 
 
 
-
-
+<!-- Begin desktop content -->
 		<div id="desktopContent">
 			<header>
 				<a href="index.html"><div class="logo">ACME</div></a>
@@ -133,7 +135,7 @@
 				
 				<div id="FAQ">
 					<h1>FAQ</h1>
-					<div id="accordionItems">
+					<div id="accordionItems"><!-- FAQ accordion items -->
 						<button class="accordion"><span>How long do items take to ship?</span></button>
 						<div class="panel">
 							<p>At ACME we pride ourselves on our speed of delivery.  Once you have submitted your order, you can expect delivery within a few seconds.</p>
@@ -158,10 +160,10 @@
 				
 				<div id="contactForm">
 					<h1>Contact Us</h1>
-					<form id="inputForm" method="get">
+					<form id="inputForm" method="get"><!-- contact form -->
 						<label for="reason">Why are you contacting us?</label>
 
-						<select name="reason" id="reason" required>
+						<select name="reason" id="reason" required><!-- dropdown for contact reason -->
 							<option value="" disabled selected>--Select an option--</option>
 							<option value="return">I would like to make a return.</option>
 							<option value="late">My order never arrived.</option>
@@ -173,7 +175,7 @@
 
 						<label for="contactInfo">Contact Information</label>
 
-						<select name="contactInfo" id="contactInfo" required>
+						<select name="contactInfo" id="contactInfo" required><!-- dropdown for prefered honorific -->
 							<option value="" disabled selected>Title</option>
 							<option value="mr">Mr.</option>
 							<option value="mrs">Mrs.</option>
@@ -182,12 +184,13 @@
 							<option value="dr">Dr.</option>
 						</select>
 
+						<!-- text inputs for name, phone and email -->
 						<input type="text" name="fName" id="fName" placeholder="First Name" required>
 						<input type="text" name="lName" id="lName" placeholder="Last Name" required>
 						<input type="email" name="email" id="email" placeholder="Email" required>
 						<input type="tel" name="phone" id="phone" placeholder="Phone" required>
 
-						<textarea name="comments" id="comments" placeholder="Comments..." required></textarea>
+						<textarea name="comments" id="comments" placeholder="Comments..." required></textarea><!-- comments box -->
 
 						<span><input type="submit" name="submit" id="submit" value="SUBMIT"></span>
 					</form>
@@ -203,5 +206,7 @@
 			</footer>
 
 		</div>
+<!-- End desktop content -->
+
 	</body>
 </html>

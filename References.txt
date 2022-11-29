@@ -1,5 +1,5 @@
-https://www.w3schools.com/howto/howto_js_accordion.asp - Referenced for building accordion on mobile site
-https://www.w3schools.com/HOWTO/howto_css_center-vertical.asp - Referenced for centering items vertically without using absolute references
-https://careerkarma.com/blog/html-copyright-symbol/#:~:text=The%20HTML%20copyright%20symbol%20is,not%20represented%20on%20your%20keyboard. - Referenced for copyright symbol in HTML
+https://stackoverflow.com/questions/507138/how-to-add-a-class-to-a-given-element - Referenced how to add/remove class names to an HTML element
 https://stackoverflow.com/questions/14939010/get-value-from-text-area - Referenced how to get user-entered contents from a text input
-https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden - Referenced for toggling hidden attribute on main tag
+https://www.w3schools.com/html/html_form_elements.asp - Referenced how to code dropdown in HTML forms
+https://www.w3schools.com/html/html_form_input_types.asp - Referenced phone number input type
+

@@ -6,23 +6,25 @@
 
 		<title>ACME Corp.</title>
 		<meta name="description" content="Fictitious Business Project Home Page">
-		<link rel="stylesheet" href="styles_contact.css">
+		<link rel="stylesheet" href="styles.css">
 		<link rel="icon" href="images/logo.png">
 		<script src="script.js"></script>
 
 	</head>
 
 	<body>
+<!-- I used semantic elements (sections) as you suggested in P2 feedback.  This caused several warnings to appear when validating as my design does not incorporate headings (h2-h5) for each section.  As these were just "warnings," not "errors," I decided to use the semantic elements, though I could easily switch them back to divisions.  I did not see any other semantic elements that would have been more apropriate than sections for this purpose. -->
 
+
+<!-- Begin mobiel content -->
 		<div id="mobileContent">
 			<header>
 				<a href="index.html"><div class="logo">ACME</div></a>
-				<div id="title">CONTACT US</div>
+				<div id="title">HOME</div>
 				<div id="hamburger"><hr><hr><hr></div>
 			</header>
 
-			<nav>
-				<a href="index.html">Home</a>
+			<nav><!-- hamburger menu items -->
 				<a href="allProducts.html">Shop All</a>
 				<a href="sale.html">Sales</a>
 				<a href="bestSellers.html">Best Sellers</a>
@@ -31,37 +33,77 @@
 				<a href="diyKits.html">DIY Kits</a>
 				<a href="birdSeed.html">Bird Seed</a>
 				<a href="misc.html">Misc Products</a>
+				<a href="about.html">About us</a>
 				<a href="contact.html">Contact us</a>
 			</nav>
 
-			<div id="searchAndCart">
-				<input type="text" placeholder="Search..." id="searchField">
-				<input type="image" src="images/search.png" id="searchButton" onclick="mobileQuery()" alt="Image of a magnifying glass.">
-				<div></div>
-				<input type="image" src="images/cart.png" class="cart" onclick="loadCart()" alt="Image of a shopping cart.">
-			</div>
-
 			<main id="mobileMain">
-				<div id="mobielFAQ">
-					<h1>FAQ</h1>
-					
-				</div>
-				
-				<div id="mobileContactForm">
-					<h1>Contact Us</h1>
-					
-				</div>
-			
+				<section id="searchAndCart">
+					<input type="text" placeholder="Search..." id="searchField">
+					<input type="image" src="images/search.png" id="searchButton" onclick="mobileQuery()" alt="Image of a magnifying glass.">
+					<div></div>
+					<input type="image" src="images/cart.png" class="cart" onclick="loadCart()" alt="Image of a shopping cart.">
+				</section>
+
+				<section class="banner">
+					<a href="sale.html">
+						<div>
+							<span>END OF SUMMER SALE</span>
+							<br>
+							<span>Enjoy up to 50% off select products!<br>Free shipping on orders over $50!<br>Free gift with every purchase!</span>
+							<br>
+							<span>HURRY,<br>SALE ENDS LABOR DAY</span>				
+						</div>
+					</a>
+					<a href="sale.html"><img src="images/diyTornado.png" alt="Box containing a DIY tornado kit"></a>
+
+				</section>
+
+				<section id="categories">
+					<a href="industrial.html">
+						<div>
+							<img src="images/industrial.png" alt="Image of a cog.">
+							<p>Industrial</p>
+						</div>
+					</a>
+					<a href="diyKits.html">
+						<div>
+							<img src="images/diyKits.png" alt="Image of a hammer.">
+							<p>DIY Kits</p>
+						</div>
+					</a>
+					<a href="birdSeed.html">
+						<div>
+							<img src="images/birdSeed.png" alt="Image of the Roadrunner.">
+							<p>Bird Seed</p>
+						</div>
+					</a>
+					<a href="misc.html">
+						<div>
+							<img src="images/misc.png" alt="MISC written in ALL CAPS">
+							<p>Misc</p>
+						</div>
+					</a>
+				</section>
+
+				<section class="BSandNA">
+					<a href="bestSellers.html">
+						<span><img src="images/bestSellers.png" alt="Wile E. Coyote unrolling a paved raod."></span>
+					</a>
+					<span></span>
+					<a href="newArrivals.html">
+						<span><img src="images/newArrivals.png" alt="Wile E. Coyote strapped to a rocket, lighting the fuse with a match."></span>
+					</a>
+				</section>
+
+				<section class="main">
+					<a href="allProducts.html">
+						<div><p>SHOP ALL PRODUCTS<p></div>
+						<span><img src="images/collage_mobile.png" alt="Colalge of various ACME products featerd in the original cartoon."></span>
+					</a>
+				</section>
 			</main>
 		</div>
-
-
-
-
-
-
-
-
 
 		<div id="desktopContent">
 			<header>
@@ -79,39 +121,25 @@
 			</nav>
 			
 			<main hidden id="desktopMain">
-				<div class="banner">
+				<section class="banner">
 					<a href="sale.html">END OF SUMMER SALE ENDS SOON.  HURRY, SALE ENDS LABOR DAY!</a>
-				</div>
+				</section>
 				
-				<div id="FAQ">
-					<h1>FAQ</h1>
-					<div id="accordionItems">
-						<button class="accordion">How long do items take to ship?</button>
-						<div class="panel">
-							<p>Placeholder text.</p>
-						</div>
-
-						<button class="accordion">What is ACME doing to protect the environment?</button>
-						<div class="panel">
-							<p>Placeholder text.</p>
-						</div>
-
-						<button class="accordion">What is ACME's return policy?</button>
-						<div class="panel">
-							<p>Placeholder text.</p>
-						</div>
-
-						<button class="accordion">Which payment methods does ACME accept?</button>
-						<div class="panel">
-							<p>Placeholder text.</p>
-						</div>
-					</div>
-				</div>
+				<section class="main">
+					<a href="allProducts.html">
+						<span><img src="images/collage.png" alt="Colalge of various ACME products featerd in the original cartoon."></span>
+					</a>
+				</section>
 				
-				<div id="contactForm">
-					<h1>Contact Us</h1>
-					
-				</div>
+				<section class="BSandNA">
+					<a href="bestSellers.html">
+						<span><img src="images/bestSellersDesktop.png" alt="Wile E. Coyote unrolling a paved raod."></span>
+					</a>
+					<span></span>
+					<a href="newArrivals.html">
+						<span><img src="images/newArrivalsDesktop.png" alt="Wile E. Coyote strapped to a rocket, lighting the fuse with a match."></span>
+					</a>
+				</section>
 			</main>
 			
 			<footer>
